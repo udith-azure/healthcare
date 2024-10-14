@@ -99,8 +99,8 @@ export const AppointmentForm = ({
     schedule: new Date(values.schedule),
     status: status as Status,
     cancellationReason: values.cancellationReason,
-    timeZone: Intl.DateTimeFormat().resolvedOptions().timeZone,  // <-- Add this line
   },
+  timeZone: Intl.DateTimeFormat().resolvedOptions().timeZone,  // <-- Moved here
   type,
 };
 
